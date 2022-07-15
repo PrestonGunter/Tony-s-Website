@@ -27,9 +27,9 @@ const navSlide = () => {
 navSlide();
 
 let images = [
-    "/images/brooks_painting_house2.jpg",
-    "/images/brooks_painting_house3.jpg",
-    "/images/brooks_painting_house4.jpg"
+    "images/brooks_painting_house2.jpg",
+    "images/brooks_painting_house3.jpg",
+    "images/brooks_painting_house4.jpg"
   ];
   let slide = document.getElementById("slider");
   const slider = () => {
