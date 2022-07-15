@@ -1,0 +1,337 @@
+/* GLOBAL CSS */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background: #dcd9cd;
+  }
+
+/* NAV BAR CSS */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #829cd9; */
+    background-color: #f5a020; 
+    
+}
+
+nav ul li a:hover{
+    color: rgb(28, 12, 245);
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    margin-top: .5em;
+}
+
+.mainlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.mainlinks li{
+    list-style: none;
+}
+
+.mainlinks a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* INDEX PAGE CSS*/
+
+
+
+
+/* Brooks Painting Page CSS */ 
+
+.gallery_title {
+    text-align: right;
+    padding-bottom: 1rem;
+    margin-top: 3em;
+    margin-right: 18em;
+  }
+  
+  .gallery {
+    box-shadow: 0 0.1rem 0 0 rgba(0, 0, 0, 0.1);
+    
+    margin: 0 auto;
+    display: grid;
+    max-width: 780px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 180px;
+    grid-gap: 20px;
+    padding-bottom: 70px;
+  }
+  
+  .gallery .item {
+    max-width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    cursor: pointer;
+    filter: grayscale(40%);
+  }
+  
+  .gallery .item:hover {
+    filter: none;
+    transition: 0.3s ease-out;
+    transform: scale(1.06);
+  }
+
+  
+  .gallery img {
+    max-width: 180px;
+    height: 70%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+      rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    input::placeholder {
+      font-size: 13px;
+    }
+  }
+  
+
+
+
+
+
+/* PEEP SECURITY CSS */ 
+
+.banner{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    left: 150px;
+    color: #fff;
+}
+
+.app-text{
+    width: 50%;
+    float: left;
+    padding-left: 50px;
+}
+
+.app-text h3{
+    margin-top: 100px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.app-text h1{
+    font-size: 51px;
+    position: relative;
+    color: #000;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.app-text p{
+    font-size: 19px;
+    margin: 30px 30px 30px 0;
+    letter-spacing: 1px;
+    color: #000;
+    padding-right: 250px;
+}
+
+.btn-group{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.btn-group .signup-btn{
+    cursor: pointer;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 32px;
+    background-color: #ffa037;
+    padding: 15px 50px;
+}
+
+.btn-group .play-btn{
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.btn-group span{
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.about-services{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-services ul{
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.about-services ul li{
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.about-services ul li img{
+    width: 120px;
+    height: auto;
+}
+
+.about-services ul li h1{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-services ul li p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.social-icons{
+    position: fixed;
+    right: 30px;
+    top: 30%;
+}
+
+.social-icons ul li{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.social-icons ul li a{
+    color: #000;
+    padding: 10px;
+    display: block;
+    font-size: 29px;
+}
+
+.social-icons ul li a:hover{
+    background-color: #220efb;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIEW CSS */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color : rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .mainlinks{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .mainlinks{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: #829cd9;
+
+       
+    }
+
+    .mainlinks li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    } 
+}
+
+.mainlinks-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
